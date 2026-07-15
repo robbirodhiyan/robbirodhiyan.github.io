@@ -19,7 +19,7 @@
   <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
   <link rel="preload" href="assets/img/ahmad-robbi-profile.webp" as="image" type="image/webp">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <script type="application/ld+json">
   {
@@ -69,6 +69,7 @@
             <li class="nav-item"><a class="nav-link" href="#impact">Impact</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="demo/index.html">Demos</a></li>
             <li class="nav-item"><a class="nav-link" href="#stack">Stack</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
@@ -95,7 +96,8 @@
               I am an Enterprise Application Lead and Senior Full-Stack Developer who designs, delivers, and scales business-critical platforms for manufacturing, HR, quality, procurement, finance, and commercial operations.
             </p>
             <div class="hero-actions">
-              <a class="btn btn-brand btn-lg" href="#projects">Explore case studies <i class="bi bi-arrow-down-right"></i></a>
+              <a class="btn btn-brand btn-lg" href="demo/index.html">Try interactive demos <i class="bi bi-play-circle"></i></a>
+              <a class="btn btn-ghost btn-lg" href="#projects">Explore case studies <i class="bi bi-arrow-down-right"></i></a>
               <a class="btn btn-ghost btn-lg" href="assets/docs/Ahmad_Robbi_Portfolio_Landscape.pdf" target="_blank" rel="noopener">View PDF portfolio <i class="bi bi-box-arrow-up-right"></i></a>
             </div>
             <div class="hero-proof" aria-label="Career highlights">
@@ -316,6 +318,7 @@
                 <div><dt>Reach</dt><dd>100+ internal users</dd></div>
               </dl>
               <div class="case-stack">Laravel · REST API · SAP · MySQL · Redis · AWS</div>
+              <a class="case-demo-link" href="demo/index.html?app=production">Open interactive demo <i class="bi bi-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -331,6 +334,7 @@
               <h3>SAP Data Cloning & Integration Platform</h3>
               <p>A resilient synchronization layer for high-volume SAP data with batching, checkpointing, queue workers, retries, and historical/realtime processing.</p>
               <div class="case-stack">PHP · Laravel Queue · REST API · Redis · PostgreSQL · AWS</div>
+              <a class="case-demo-link" href="demo/index.html?app=sapclone">Open interactive demo <i class="bi bi-arrow-up-right"></i></a>
             </div>
           </article>
 
@@ -346,8 +350,26 @@
               <h3>Enterprise Operations Suite</h3>
               <p>An interconnected portfolio of internal systems covering HR, sales order, finance, procurement, quality, payments, approvals, and operational reporting.</p>
               <div class="case-stack">Laravel · React · MySQL · REST API · Role-Based Access</div>
+              <a class="case-demo-link" href="demo/index.html?app=hris">Explore HRIS demo <i class="bi bi-arrow-up-right"></i></a>
             </div>
           </article>
+        </div>
+
+        <div class="interactive-demo-showcase reveal">
+          <div class="demo-showcase-copy">
+            <p class="section-kicker">Interactive demos</p>
+            <h3>Experience the systems—not just the project descriptions.</h3>
+            <p>Explore five sanitized, recruiter-friendly prototypes reconstructed from real application structures. Every screen uses fictional data and runs safely as a static GitHub Pages experience.</p>
+            <div class="demo-safety-tags"><span><i class="bi bi-shield-check"></i> Dummy data</span><span><i class="bi bi-cloud-slash"></i> No production access</span><span><i class="bi bi-github"></i> GitHub Pages ready</span></div>
+            <a class="btn btn-brand" href="demo/index.html">Open Demo Center <i class="bi bi-play-circle"></i></a>
+          </div>
+          <div class="demo-preview-grid">
+            <a href="demo/index.html?app=production"><img src="assets/img/demos/production.webp" alt="Production intelligence demo preview"><span>Production</span></a>
+            <a href="demo/index.html?app=sapclone"><img src="assets/img/demos/sapclone.webp" alt="SAP clone monitor demo preview"><span>SAP Clone</span></a>
+            <a href="demo/index.html?app=hris"><img src="assets/img/demos/hris.webp" alt="HRIS demo preview"><span>HRIS</span></a>
+            <a href="demo/index.html?app=whatsapp"><img src="assets/img/demos/whatsapp.webp" alt="WhatsApp gateway demo preview"><span>WhatsApp</span></a>
+            <a href="demo/index.html?app=purchase"><img src="assets/img/demos/purchase.webp" alt="Purchase analytics demo preview"><span>Purchase</span></a>
+          </div>
         </div>
 
         <div class="project-library mt-5">
@@ -363,10 +385,10 @@
           </div>
           <div class="project-grid" id="projectGrid">
             <article class="project-card reveal" data-category="people operations">
-              <i class="bi bi-people"></i><span>People operations</span><h4>Integrated HRIS</h4><p>E-leave, permissions, attendance, overtime, payroll, approval hierarchy, and workforce reporting.</p>
+              <i class="bi bi-people"></i><span>People operations</span><h4>Integrated HRIS</h4><p>E-leave, permissions, attendance, overtime, payroll, approval hierarchy, and workforce reporting.</p><a class="project-demo-link" href="demo/index.html?app=hris">Interactive demo <i class="bi bi-arrow-up-right"></i></a>
             </article>
             <article class="project-card reveal" data-category="operations integration">
-              <i class="bi bi-graph-up-arrow"></i><span>Manufacturing</span><h4>Production Reporting</h4><p>Automated production, shift, yield, OEE, target-versus-actual, and performance monitoring.</p>
+              <i class="bi bi-graph-up-arrow"></i><span>Manufacturing</span><h4>Production Reporting</h4><p>Automated production, shift, yield, OEE, target-versus-actual, and performance monitoring.</p><a class="project-demo-link" href="demo/index.html?app=production">Interactive demo <i class="bi bi-arrow-up-right"></i></a>
             </article>
             <article class="project-card reveal" data-category="operations integration">
               <i class="bi bi-patch-check"></i><span>Quality</span><h4>QC & Certificate of Analysis</h4><p>SAP-connected quality results, traceable product documentation, and automated CoA distribution.</p>
@@ -375,10 +397,10 @@
               <i class="bi bi-speedometer"></i><span>Performance</span><h4>KPI Management</h4><p>Digital KPI capture, calculation, monitoring, and cross-functional performance visibility.</p>
             </article>
             <article class="project-card reveal" data-category="integration operations">
-              <i class="bi bi-whatsapp"></i><span>Messaging</span><h4>WhatsApp Gateway</h4><p>Template-based messages, operational notifications, bulk delivery workflows, and system-triggered communication.</p>
+              <i class="bi bi-whatsapp"></i><span>Messaging</span><h4>WhatsApp Gateway</h4><p>Template-based messages, operational notifications, bulk delivery workflows, and system-triggered communication.</p><a class="project-demo-link" href="demo/index.html?app=whatsapp">Interactive demo <i class="bi bi-arrow-up-right"></i></a>
             </article>
             <article class="project-card reveal" data-category="integration">
-              <i class="bi bi-database-up"></i><span>Data platform</span><h4>SAP Cloning & Integration</h4><p>Scheduled data replication, queue orchestration, checkpoints, retry handling, and reporting data services.</p>
+              <i class="bi bi-database-up"></i><span>Data platform</span><h4>SAP Cloning & Integration</h4><p>Scheduled data replication, queue orchestration, checkpoints, retry handling, and reporting data services.</p><a class="project-demo-link" href="demo/index.html?app=sapclone">Interactive demo <i class="bi bi-arrow-up-right"></i></a>
             </article>
             <article class="project-card reveal" data-category="operations finance">
               <i class="bi bi-boxes"></i><span>ERP</span><h4>Internal ERP Recording</h4><p>Structured enterprise transaction recording for inventory, business operations, approvals, and auditability.</p>
@@ -387,7 +409,7 @@
               <i class="bi bi-receipt"></i><span>Commercial</span><h4>Sales Order Platform</h4><p>Sales contract, order, internal order, proforma invoice, and operational document workflows.</p>
             </article>
             <article class="project-card reveal" data-category="finance integration">
-              <i class="bi bi-wallet2"></i><span>Finance</span><h4>Finance & Purchase Reporting</h4><p>SAP-connected procurement and finance reporting, transaction monitoring, reconciliation, and dashboards.</p>
+              <i class="bi bi-wallet2"></i><span>Finance</span><h4>Finance & Purchase Reporting</h4><p>SAP-connected procurement and finance reporting, transaction monitoring, reconciliation, and dashboards.</p><a class="project-demo-link" href="demo/index.html?app=purchase">Interactive demo <i class="bi bi-arrow-up-right"></i></a>
             </article>
             <article class="project-card reveal" data-category="finance integration">
               <i class="bi bi-credit-card-2-front"></i><span>Payments</span><h4>Payment Gateway Integration</h4><p>Secure payment workflows, transaction callbacks, status tracking, and financial system integration.</p>

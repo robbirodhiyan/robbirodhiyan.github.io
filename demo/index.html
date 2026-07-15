@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#07111f">
+  <title>Interactive Enterprise App Demos | Ahmad Robbi</title>
+  <meta name="description" content="Sanitized interactive demos of enterprise systems designed and delivered by Ahmad Robbi, including production reporting, SAP data cloning, HRIS, WhatsApp gateway, and purchase reporting.">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/demo.css" rel="stylesheet">
+</head>
+<body>
+  <div class="demo-shell">
+    <aside class="demo-sidebar" id="demoSidebar">
+      <a class="demo-brand" href="../index.html#projects">
+        <span class="brand-mark">AR</span>
+        <span><strong>Ahmad Robbi</strong><small>Interactive demos</small></span>
+      </a>
+
+      <div class="demo-safety">
+        <i class="bi bi-shield-check"></i>
+        <div><strong>Sanitized environment</strong><span>Dummy data · no production connection</span></div>
+      </div>
+
+      <nav class="demo-nav" aria-label="Demo applications">
+        <button class="demo-nav-item active" data-view="overview" type="button"><i class="bi bi-grid-1x2"></i><span>Demo Center</span></button>
+        <button class="demo-nav-item" data-view="production" type="button"><i class="bi bi-graph-up-arrow"></i><span>Production Intelligence</span></button>
+        <button class="demo-nav-item" data-view="sapclone" type="button"><i class="bi bi-database-up"></i><span>SAP Data Clone</span></button>
+        <button class="demo-nav-item" data-view="hris" type="button"><i class="bi bi-people"></i><span>Integrated HRIS</span></button>
+        <button class="demo-nav-item" data-view="whatsapp" type="button"><i class="bi bi-whatsapp"></i><span>WhatsApp Gateway</span></button>
+        <button class="demo-nav-item" data-view="purchase" type="button"><i class="bi bi-wallet2"></i><span>Purchase Analytics</span></button>
+      </nav>
+
+      <div class="demo-sidebar-footer">
+        <a href="../index.html#projects"><i class="bi bi-arrow-left"></i> Back to portfolio</a>
+        <span>Static prototype for recruiter review</span>
+      </div>
+    </aside>
+
+    <div class="demo-content">
+      <header class="demo-topbar">
+        <div class="demo-topbar-left">
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle menu"><i class="bi bi-list"></i></button>
+          <div>
+            <p class="topbar-eyebrow" id="topbarEyebrow">PORTFOLIO DEMO CENTER</p>
+            <h1 id="topbarTitle">Enterprise Application Showcase</h1>
+          </div>
+        </div>
+        <div class="topbar-actions">
+          <span class="environment-pill"><span></span> Demo only</span>
+          <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme"><i class="bi bi-sun-fill"></i></button>
+          <a class="topbar-link" href="../index.html#contact"><i class="bi bi-envelope"></i><span>Contact</span></a>
+        </div>
+      </header>
+
+      <main class="demo-main">
+        <section class="demo-view active" data-view-panel="overview">
+          <div class="overview-hero">
+            <div>
+              <span class="section-label">INTERACTIVE PRODUCT TOUR</span>
+              <h2>Explore how I turn complex operations into reliable digital systems.</h2>
+              <p>These recruiter-friendly prototypes are reconstructed from real enterprise application structures while using fully fictional data. They demonstrate workflow design, system thinking, analytics, integration patterns, and delivery quality without exposing company information.</p>
+              <div class="hero-buttons">
+                <button class="primary-btn" data-open-view="production" type="button">Start with Production Intelligence <i class="bi bi-arrow-right"></i></button>
+                <a class="secondary-btn" href="../assets/docs/Ahmad_Robbi_Portfolio_Landscape.pdf" target="_blank" rel="noopener">Open detailed PDF <i class="bi bi-box-arrow-up-right"></i></a>
+              </div>
+            </div>
+            <div class="architecture-card">
+              <div class="architecture-title"><span>Enterprise delivery pattern</span><i class="bi bi-diagram-3"></i></div>
+              <div class="architecture-flow">
+                <div><i class="bi bi-building"></i><strong>Business Process</strong><small>Stakeholders & controls</small></div>
+                <span><i class="bi bi-arrow-right"></i></span>
+                <div><i class="bi bi-code-square"></i><strong>Application Layer</strong><small>Laravel · API · UI</small></div>
+                <span><i class="bi bi-arrow-right"></i></span>
+                <div><i class="bi bi-database"></i><strong>Enterprise Data</strong><small>SAP · SQL · Redis</small></div>
+              </div>
+              <div class="architecture-stats">
+                <div><strong>10+</strong><span>systems delivered</span></div>
+                <div><strong>10K+</strong><span>records/day</span></div>
+                <div><strong>15</strong><span>team members led</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-app-grid">
+            <article class="demo-app-card" data-open-view="production">
+              <div class="app-card-icon production"><i class="bi bi-graph-up-arrow"></i></div>
+              <div class="app-card-copy"><span>Manufacturing intelligence</span><h3>Production Reporting & OEE</h3><p>SAP-connected performance monitoring, yield analysis, waste breakdown, and automated reporting.</p></div>
+              <div class="app-card-meta"><span>Laravel</span><span>SAP API</span><span>Redis</span></div>
+              <button type="button">Open demo <i class="bi bi-arrow-up-right"></i></button>
+            </article>
+            <article class="demo-app-card" data-open-view="sapclone">
+              <div class="app-card-icon sap"><i class="bi bi-database-up"></i></div>
+              <div class="app-card-copy"><span>Enterprise data platform</span><h3>SAP Data Cloning</h3><p>Queue orchestration, checkpoints, retries, job monitoring, and local reporting data services.</p></div>
+              <div class="app-card-meta"><span>Queue</span><span>Checkpoint</span><span>PostgreSQL</span></div>
+              <button type="button">Open demo <i class="bi bi-arrow-up-right"></i></button>
+            </article>
+            <article class="demo-app-card" data-open-view="hris">
+              <div class="app-card-icon hris"><i class="bi bi-people"></i></div>
+              <div class="app-card-copy"><span>People operations</span><h3>Integrated HRIS</h3><p>Leave, permission, attendance, overtime, payroll readiness, and multi-level approvals.</p></div>
+              <div class="app-card-meta"><span>Workflow</span><span>RBAC</span><span>Approval</span></div>
+              <button type="button">Open demo <i class="bi bi-arrow-up-right"></i></button>
+            </article>
+            <article class="demo-app-card" data-open-view="whatsapp">
+              <div class="app-card-icon wa"><i class="bi bi-whatsapp"></i></div>
+              <div class="app-card-copy"><span>Messaging infrastructure</span><h3>WhatsApp Gateway</h3><p>Instance monitoring, API client management, message delivery, queues, and operational logs.</p></div>
+              <div class="app-card-meta"><span>Node.js</span><span>Baileys</span><span>REST API</span></div>
+              <button type="button">Open demo <i class="bi bi-arrow-up-right"></i></button>
+            </article>
+            <article class="demo-app-card" data-open-view="purchase">
+              <div class="app-card-icon purchase"><i class="bi bi-wallet2"></i></div>
+              <div class="app-card-copy"><span>Procurement analytics</span><h3>Purchase & Finance Report</h3><p>Spend visibility, PO monitoring, material analytics, GR tracking, and account switching traceability.</p></div>
+              <div class="app-card-meta"><span>SAP</span><span>Analytics</span><span>Reconciliation</span></div>
+              <button type="button">Open demo <i class="bi bi-arrow-up-right"></i></button>
+            </article>
+          </div>
+        </section>
+
+        <section class="demo-view" data-view-panel="production">
+          <div class="page-intro">
+            <div><span class="section-label">SAP-CONNECTED MANUFACTURING</span><h2>Production Intelligence Dashboard</h2><p>Monitor target achievement, yield, OEE, runtime, and waste from a single operational view.</p></div>
+            <div class="intro-actions">
+              <label class="select-control"><span>Period</span><select id="productionPeriod"><option>July 2026</option><option>June 2026</option><option>May 2026</option></select></label>
+              <label class="select-control"><span>Production line</span><select id="productionLine"><option value="all">All Lines</option><option value="01">Line 01</option><option value="02">Line 02</option><option value="05">Line 05</option></select></label>
+              <button class="primary-btn compact" id="productionSync" type="button"><i class="bi bi-arrow-repeat"></i> Sync SAP</button>
+            </div>
+          </div>
+
+          <div class="notice-bar"><i class="bi bi-info-circle"></i><span>Demo data is fictional. The sync action simulates a queue-based SAP refresh.</span><small id="productionUpdated">Updated 2 minutes ago</small></div>
+
+          <div class="metric-grid four">
+            <article class="metric-card"><span>Production output</span><strong id="metricOutput">2,486.7 t</strong><small class="positive"><i class="bi bi-arrow-up"></i> 6.8% vs target</small></article>
+            <article class="metric-card"><span>Average yield</span><strong id="metricYield">92.4%</strong><small class="positive"><i class="bi bi-arrow-up"></i> 1.9 pts MoM</small></article>
+            <article class="metric-card"><span>Overall OEE</span><strong id="metricOee">87.8%</strong><small>Availability 91.2% · Quality 98.7%</small></article>
+            <article class="metric-card"><span>Total waste</span><strong id="metricWaste">76.3 t</strong><small class="negative"><i class="bi bi-arrow-down"></i> 8.4% improvement</small></article>
+          </div>
+
+          <div class="dashboard-grid production-grid">
+            <article class="panel chart-panel">
+              <div class="panel-head"><div><span>OUTPUT TREND</span><h3>Target vs actual production</h3></div><div class="legend"><span class="actual"></span>Actual <span class="target"></span>Target</div></div>
+              <div class="bar-chart" id="productionChart" aria-label="Production output chart">
+                <div class="bar-group"><div class="bar actual" style="height:61%"></div><div class="bar target" style="height:66%"></div><small>W1</small></div>
+                <div class="bar-group"><div class="bar actual" style="height:74%"></div><div class="bar target" style="height:70%"></div><small>W2</small></div>
+                <div class="bar-group"><div class="bar actual" style="height:82%"></div><div class="bar target" style="height:76%"></div><small>W3</small></div>
+                <div class="bar-group"><div class="bar actual" style="height:89%"></div><div class="bar target" style="height:81%"></div><small>W4</small></div>
+              </div>
+            </article>
+            <article class="panel donut-panel">
+              <div class="panel-head"><div><span>OEE COMPONENTS</span><h3>Equipment effectiveness</h3></div><button class="icon-action" data-modal="oeeModal" type="button"><i class="bi bi-arrows-angle-expand"></i></button></div>
+              <div class="oee-rings">
+                <div class="ring" style="--value:91.2;--ring:#45d6c2"><span><strong>91.2%</strong><small>Availability</small></span></div>
+                <div class="ring" style="--value:97.5;--ring:#6f7bf7"><span><strong>97.5%</strong><small>Performance</small></span></div>
+                <div class="ring" style="--value:98.7;--ring:#33a7ff"><span><strong>98.7%</strong><small>Quality</small></span></div>
+              </div>
+            </article>
+            <article class="panel waste-panel">
+              <div class="panel-head"><div><span>WASTE BREAKDOWN</span><h3>Loss contributors</h3></div><span class="panel-badge">76.3 t</span></div>
+              <div class="horizontal-bars">
+                <div><label><span>Trim</span><strong>28.4 t</strong></label><i><b style="width:78%"></b></i></div>
+                <div><label><span>Reject</span><strong>19.6 t</strong></label><i><b style="width:54%"></b></i></div>
+                <div><label><span>Jumbo rewind</span><strong>13.8 t</strong></label><i><b style="width:38%"></b></i></div>
+                <div><label><span>Remaining core</span><strong>8.9 t</strong></label><i><b style="width:25%"></b></i></div>
+                <div><label><span>Other losses</span><strong>5.6 t</strong></label><i><b style="width:16%"></b></i></div>
+              </div>
+            </article>
+          </div>
+
+          <article class="panel data-panel">
+            <div class="panel-head"><div><span>PRODUCTION ORDERS</span><h3>Performance by material and line</h3></div><div class="table-actions"><input id="productionSearch" type="search" placeholder="Search order or material"><button class="secondary-btn compact" id="exportProduction" type="button"><i class="bi bi-download"></i> Export</button></div></div>
+            <div class="table-wrap">
+              <table><thead><tr><th>Order</th><th>Line</th><th>Material</th><th>Target</th><th>Actual</th><th>Yield</th><th>OEE</th><th>Status</th><th></th></tr></thead>
+                <tbody id="productionRows">
+                  <tr><td><strong>PRD-2607018</strong><small>15 Jul 2026</small></td><td><span class="line-pill">01</span></td><td>Spunbond SSS 20 GSM</td><td>124.0 t</td><td>129.8 t</td><td>94.7%</td><td>89.3%</td><td><span class="status success">On target</span></td><td><button class="row-action" data-order="PRD-2607018"><i class="bi bi-chevron-right"></i></button></td></tr>
+                  <tr><td><strong>PRD-2607016</strong><small>14 Jul 2026</small></td><td><span class="line-pill">02</span></td><td>Spunbond SS 25 GSM</td><td>112.5 t</td><td>109.1 t</td><td>91.8%</td><td>85.4%</td><td><span class="status warning">Review</span></td><td><button class="row-action" data-order="PRD-2607016"><i class="bi bi-chevron-right"></i></button></td></tr>
+                  <tr><td><strong>PRD-2607013</strong><small>13 Jul 2026</small></td><td><span class="line-pill">05</span></td><td>Spunmelt SMS 35 GSM</td><td>97.0 t</td><td>101.6 t</td><td>93.2%</td><td>88.6%</td><td><span class="status success">On target</span></td><td><button class="row-action" data-order="PRD-2607013"><i class="bi bi-chevron-right"></i></button></td></tr>
+                  <tr><td><strong>PRD-2607009</strong><small>12 Jul 2026</small></td><td><span class="line-pill">01</span></td><td>Spunbond S 17 GSM</td><td>88.0 t</td><td>82.7 t</td><td>89.5%</td><td>81.9%</td><td><span class="status danger">Below target</span></td><td><button class="row-action" data-order="PRD-2607009"><i class="bi bi-chevron-right"></i></button></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <section class="demo-view" data-view-panel="sapclone">
+          <div class="page-intro">
+            <div><span class="section-label">QUEUE-BASED DATA PLATFORM</span><h2>SAP Clone Monitor</h2><p>Control high-volume SAP replication with checkpoints, retries, heartbeat monitoring, and local table services.</p></div>
+            <div class="intro-actions"><button class="secondary-btn compact" id="recheckStuck" type="button"><i class="bi bi-heart-pulse"></i> Recheck stuck jobs</button><button class="primary-btn compact" id="startClone" type="button"><i class="bi bi-play-fill"></i> Start cloning</button></div>
+          </div>
+          <div class="metric-grid four">
+            <article class="metric-card"><span>Active sources</span><strong>5</strong><small>MATDOC · EKKO · EKPO · MARA · LFA1</small></article>
+            <article class="metric-card"><span>Records synchronized</span><strong>1.84M</strong><small class="positive">Last 30 days</small></article>
+            <article class="metric-card"><span>Queue health</span><strong>Healthy</strong><small>5 workers · 0 failed jobs</small></article>
+            <article class="metric-card"><span>Last successful sync</span><strong>17:42</strong><small>15 July 2026</small></article>
+          </div>
+          <div class="dashboard-grid clone-grid">
+            <article class="panel running-job-panel">
+              <div class="panel-head"><div><span>RUNNING CLONING</span><h3 id="cloneRunTitle">MATDOC incremental sync</h3></div><span class="status running"><i></i> Running</span></div>
+              <div class="clone-progress-copy"><div><strong id="clonePercent">68%</strong><span>Page 142 of 208 · Chunk 7 of 10</span></div><small id="cloneHeartbeat">Heartbeat 4 seconds ago</small></div>
+              <div class="progress-track"><b id="cloneProgressBar" style="width:68%"></b></div>
+              <div class="clone-steps">
+                <div class="done"><i class="bi bi-check2"></i><span>Initialize</span></div><div class="done"><i class="bi bi-check2"></i><span>Read SAP</span></div><div class="active"><i class="bi bi-arrow-repeat"></i><span>Upsert local</span></div><div><i class="bi bi-circle"></i><span>Checkpoint</span></div><div><i class="bi bi-circle"></i><span>Finalize</span></div>
+              </div>
+              <div class="job-actions"><button class="secondary-btn compact" id="pauseClone" type="button"><i class="bi bi-pause"></i> Pause simulation</button><button class="danger-btn compact" id="cancelClone" type="button"><i class="bi bi-x-lg"></i> Cancel</button></div>
+            </article>
+            <article class="panel source-panel">
+              <div class="panel-head"><div><span>SOURCE CONFIGURATION</span><h3>Active SAP tables</h3></div><button class="icon-action" id="refreshSources" type="button"><i class="bi bi-arrow-clockwise"></i></button></div>
+              <div class="source-list">
+                <div><span class="source-icon">MA</span><div><strong>MATDOC</strong><small>Material documents</small></div><b>24 fields</b><i class="status-dot success"></i></div>
+                <div><span class="source-icon">EK</span><div><strong>EKKO</strong><small>Purchasing header</small></div><b>18 fields</b><i class="status-dot success"></i></div>
+                <div><span class="source-icon">EP</span><div><strong>EKPO</strong><small>Purchasing items</small></div><b>31 fields</b><i class="status-dot success"></i></div>
+                <div><span class="source-icon">MR</span><div><strong>MARA</strong><small>Material master</small></div><b>16 fields</b><i class="status-dot success"></i></div>
+                <div><span class="source-icon">LF</span><div><strong>LFA1</strong><small>Vendor master</small></div><b>12 fields</b><i class="status-dot success"></i></div>
+              </div>
+            </article>
+          </div>
+          <article class="panel data-panel">
+            <div class="panel-head"><div><span>CLONE HISTORY</span><h3>Synchronization activity</h3></div><div class="table-actions"><input id="cloneSearch" type="search" placeholder="Search source or status"><button class="secondary-btn compact" id="openDataBrowser" type="button"><i class="bi bi-table"></i> Data browser</button></div></div>
+            <div class="table-wrap"><table><thead><tr><th>Source</th><th>Window</th><th>Status</th><th>Progress</th><th>Records</th><th>Duration</th><th>Message</th><th></th></tr></thead><tbody id="cloneRows">
+              <tr><td><strong>MATDOC</strong><small>Incremental</small></td><td>15 Jul 16:00 → 17:40</td><td><span class="status running">Running</span></td><td><div class="mini-progress"><b style="width:68%"></b><span>68%</span></div></td><td>184,240</td><td>18m 42s</td><td>Upserting page 142</td><td><button class="row-action" data-log="MATDOC"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr><td><strong>EKKO</strong><small>Incremental</small></td><td>15 Jul 15:00 → 15:12</td><td><span class="status success">Success</span></td><td><div class="mini-progress"><b style="width:100%"></b><span>100%</span></div></td><td>18,620</td><td>4m 08s</td><td>Completed</td><td><button class="row-action" data-log="EKKO"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr><td><strong>EKPO</strong><small>Incremental</small></td><td>15 Jul 15:00 → 15:17</td><td><span class="status success">Success</span></td><td><div class="mini-progress"><b style="width:100%"></b><span>100%</span></div></td><td>61,904</td><td>9m 54s</td><td>Completed</td><td><button class="row-action" data-log="EKPO"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr><td><strong>MARA</strong><small>Full refresh</small></td><td>15 Jul 13:00 → 13:09</td><td><span class="status success">Success</span></td><td><div class="mini-progress"><b style="width:100%"></b><span>100%</span></div></td><td>42,118</td><td>8m 31s</td><td>Completed</td><td><button class="row-action" data-log="MARA"><i class="bi bi-chevron-right"></i></button></td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+
+        <section class="demo-view" data-view-panel="hris">
+          <div class="page-intro">
+            <div><span class="section-label">END-TO-END PEOPLE OPERATIONS</span><h2>Integrated HRIS</h2><p>Digitalize employee services, approval workflows, attendance visibility, overtime controls, and payroll readiness.</p></div>
+            <div class="intro-actions"><label class="select-control"><span>Demo role</span><select id="hrisRole"><option value="hrd">HR & Personalia</option><option value="manager">Department Head</option><option value="employee">Employee</option></select></label><button class="primary-btn compact" id="newLeave" type="button"><i class="bi bi-plus-lg"></i> New leave request</button></div>
+          </div>
+          <div class="metric-grid four">
+            <article class="metric-card"><span>Registered employees</span><strong>684</strong><small>638 active accounts</small></article>
+            <article class="metric-card"><span>Attendance today</span><strong>96.8%</strong><small class="positive">612 present · 20 shift leave</small></article>
+            <article class="metric-card"><span>Pending approvals</span><strong id="pendingApprovals">12</strong><small>7 leave · 5 permission</small></article>
+            <article class="metric-card"><span>Overtime this month</span><strong>1,284 h</strong><small>Within department budget</small></article>
+          </div>
+          <div class="dashboard-grid hris-grid">
+            <article class="panel attendance-panel">
+              <div class="panel-head"><div><span>ATTENDANCE TREND</span><h3>Weekly workforce presence</h3></div><span class="panel-badge">96.8% avg</span></div>
+              <div class="line-chart"><svg viewBox="0 0 600 210" role="img" aria-label="Attendance trend"><defs><linearGradient id="areaGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#45d6c2" stop-opacity=".34"/><stop offset="1" stop-color="#45d6c2" stop-opacity="0"/></linearGradient></defs><path class="grid-line" d="M20 45H580M20 95H580M20 145H580M20 195H580"/><path class="area" d="M20 160 C90 125,130 120,180 132 S290 82,340 96 S445 62,500 78 S550 55,580 70 L580 195 L20 195Z" fill="url(#areaGrad)"/><path class="trend" d="M20 160 C90 125,130 120,180 132 S290 82,340 96 S445 62,500 78 S550 55,580 70"/><g class="chart-labels"><text x="20" y="208">Mon</text><text x="155" y="208">Tue</text><text x="290" y="208">Wed</text><text x="425" y="208">Thu</text><text x="555" y="208">Fri</text></g></svg></div>
+            </article>
+            <article class="panel approval-panel">
+              <div class="panel-head"><div><span>APPROVAL PIPELINE</span><h3>Request distribution</h3></div><button class="icon-action" id="refreshHris" type="button"><i class="bi bi-arrow-clockwise"></i></button></div>
+              <div class="approval-summary"><div><span class="approval-icon pending"><i class="bi bi-hourglass-split"></i></span><p><strong>12</strong><small>Waiting</small></p></div><div><span class="approval-icon approved"><i class="bi bi-check2"></i></span><p><strong>148</strong><small>Approved</small></p></div><div><span class="approval-icon rejected"><i class="bi bi-x-lg"></i></span><p><strong>6</strong><small>Rejected</small></p></div></div>
+              <div class="approval-route"><div class="route-step done"><i class="bi bi-check2"></i><span>Employee submission</span></div><div class="route-step active"><i class="bi bi-person-check"></i><span>Department approval</span></div><div class="route-step"><i class="bi bi-people"></i><span>HR validation</span></div><div class="route-step"><i class="bi bi-file-earmark-check"></i><span>Finalized</span></div></div>
+            </article>
+          </div>
+          <article class="panel data-panel">
+            <div class="panel-head"><div><span>LEAVE & PERMISSION REQUESTS</span><h3 id="hrisTableTitle">HR approval queue</h3></div><div class="table-actions"><input id="hrisSearch" type="search" placeholder="Search employee or request"><button class="secondary-btn compact" id="hrisCalendar" type="button"><i class="bi bi-calendar3"></i> Team calendar</button></div></div>
+            <div class="table-wrap"><table><thead><tr><th>Request</th><th>Employee</th><th>Department</th><th>Type</th><th>Period</th><th>Approval route</th><th>Status</th><th></th></tr></thead><tbody id="hrisRows">
+              <tr data-status="pending"><td><strong>LV-2026-0715-018</strong><small>Submitted 09:18</small></td><td><strong>Dina Pratama</strong><small>EMP-1042</small></td><td>Production Planning</td><td>Annual leave</td><td>18–19 Jul · 2 days</td><td><div class="route-inline"><i class="done"></i><i class="active"></i><i></i></div></td><td><span class="status warning">Waiting HR</span></td><td><button class="row-action hris-action" data-request="LV-2026-0715-018"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr data-status="pending"><td><strong>PR-2026-0715-011</strong><small>Submitted 08:42</small></td><td><strong>Raka Wijaya</strong><small>EMP-1186</small></td><td>Information Technology</td><td>Business trip</td><td>21 Jul · 1 day</td><td><div class="route-inline"><i class="done"></i><i class="done"></i><i class="active"></i></div></td><td><span class="status warning">Waiting HR</span></td><td><button class="row-action hris-action" data-request="PR-2026-0715-011"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr data-status="approved"><td><strong>LV-2026-0714-033</strong><small>Submitted yesterday</small></td><td><strong>Nadia Putri</strong><small>EMP-0974</small></td><td>Quality Control</td><td>Annual leave</td><td>22–24 Jul · 3 days</td><td><div class="route-inline"><i class="done"></i><i class="done"></i><i class="done"></i></div></td><td><span class="status success">Approved</span></td><td><button class="row-action hris-action" data-request="LV-2026-0714-033"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr data-status="rejected"><td><strong>PR-2026-0714-026</strong><small>Submitted yesterday</small></td><td><strong>Arif Nugroho</strong><small>EMP-1241</small></td><td>Warehouse</td><td>Late arrival</td><td>14 Jul · 2 hours</td><td><div class="route-inline"><i class="done"></i><i class="done"></i><i></i></div></td><td><span class="status danger">Rejected</span></td><td><button class="row-action hris-action" data-request="PR-2026-0714-026"><i class="bi bi-chevron-right"></i></button></td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+
+        <section class="demo-view" data-view-panel="whatsapp">
+          <div class="page-intro">
+            <div><span class="section-label">REAL-TIME MESSAGING INFRASTRUCTURE</span><h2>WhatsApp Gateway Control Center</h2><p>Manage connected instances, API clients, message queues, and delivery logs through a secure internal dashboard.</p></div>
+            <div class="intro-actions"><button class="secondary-btn compact" id="waApiClient" type="button"><i class="bi bi-key"></i> API clients</button><button class="primary-btn compact" id="waAddInstance" type="button"><i class="bi bi-plus-lg"></i> Add instance</button></div>
+          </div>
+          <div class="metric-grid four">
+            <article class="metric-card"><span>Connected instances</span><strong>3 / 3</strong><small class="positive">All sessions healthy</small></article>
+            <article class="metric-card"><span>Messages today</span><strong id="messagesToday">1,482</strong><small>98.9% delivered</small></article>
+            <article class="metric-card"><span>Queue status</span><strong>Normal</strong><small>4 waiting · 0 failed</small></article>
+            <article class="metric-card"><span>API requests</span><strong>12.7K</strong><small>Average latency 184 ms</small></article>
+          </div>
+          <div class="dashboard-grid wa-grid">
+            <article class="panel instance-panel">
+              <div class="panel-head"><div><span>WHATSAPP INSTANCES</span><h3>Connected numbers</h3></div><button class="icon-action" id="refreshWa" type="button"><i class="bi bi-arrow-clockwise"></i></button></div>
+              <div class="instance-list">
+                <div><span class="wa-avatar"><i class="bi bi-whatsapp"></i></span><div><strong>Operations Bot</strong><small>+62 812-0000-1001 · main</small></div><span class="status success"><i></i> Connected</span><button class="row-action"><i class="bi bi-three-dots"></i></button></div>
+                <div><span class="wa-avatar"><i class="bi bi-whatsapp"></i></span><div><strong>HR Notification</strong><small>+62 812-0000-1002 · hris</small></div><span class="status success"><i></i> Connected</span><button class="row-action"><i class="bi bi-three-dots"></i></button></div>
+                <div><span class="wa-avatar"><i class="bi bi-whatsapp"></i></span><div><strong>Vendor Service</strong><small>+62 812-0000-1003 · vendor</small></div><span class="status success"><i></i> Connected</span><button class="row-action"><i class="bi bi-three-dots"></i></button></div>
+              </div>
+            </article>
+            <article class="panel send-panel">
+              <div class="panel-head"><div><span>MESSAGE SIMULATOR</span><h3>Send a demo message</h3></div><span class="panel-badge">No real delivery</span></div>
+              <form id="waMessageForm">
+                <label><span>Instance</span><select id="waInstance"><option>Operations Bot</option><option>HR Notification</option><option>Vendor Service</option></select></label>
+                <label><span>Destination</span><input id="waDestination" type="text" value="+62 812-0000-9999" required></label>
+                <label><span>Message</span><textarea id="waMessage" rows="4" required>Hello, this is a simulated notification from the enterprise demo environment.</textarea></label>
+                <button class="primary-btn" type="submit"><i class="bi bi-send"></i> Queue demo message</button>
+              </form>
+            </article>
+          </div>
+          <article class="panel data-panel">
+            <div class="panel-head"><div><span>GATEWAY LOGS</span><h3>Message and session activity</h3></div><div class="table-actions"><input id="waSearch" type="search" placeholder="Search event or instance"><button class="secondary-btn compact" id="clearWaLogs" type="button"><i class="bi bi-eraser"></i> Clear demo logs</button></div></div>
+            <div class="table-wrap"><table><thead><tr><th>Time</th><th>Instance</th><th>Direction / event</th><th>Destination</th><th>Status</th><th>Latency</th><th>Detail</th></tr></thead><tbody id="waRows">
+              <tr><td>17:51:24</td><td><strong>main</strong></td><td>Outbound message</td><td>+62 812••••9999</td><td><span class="status success">Delivered</span></td><td>842 ms</td><td>Template: production_alert</td></tr>
+              <tr><td>17:48:09</td><td><strong>hris</strong></td><td>Outbound message</td><td>+62 813••••1034</td><td><span class="status success">Delivered</span></td><td>734 ms</td><td>Leave approval notification</td></tr>
+              <tr><td>17:42:17</td><td><strong>vendor</strong></td><td>Session heartbeat</td><td>—</td><td><span class="status success">Healthy</span></td><td>96 ms</td><td>WebSocket session active</td></tr>
+              <tr><td>17:38:51</td><td><strong>main</strong></td><td>Outbound message</td><td>+62 811••••8820</td><td><span class="status warning">Queued</span></td><td>—</td><td>Rate limit delay 1.5s</td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+
+        <section class="demo-view" data-view-panel="purchase">
+          <div class="page-intro">
+            <div><span class="section-label">SAP-CONNECTED PROCUREMENT</span><h2>Purchase & Finance Analytics</h2><p>Track purchasing commitments, vendor concentration, material groups, GR completion, and account-switching transactions.</p></div>
+            <div class="intro-actions"><label class="select-control"><span>Period</span><select id="purchasePeriod"><option>July 2026</option><option>June 2026</option><option>Year to date</option></select></label><label class="select-control"><span>Material type</span><select id="purchaseType"><option value="all">All types</option><option value="ZRAW">Raw material</option><option value="ZSUP">Supplies</option><option value="ZPCK">Packaging</option></select></label><button class="primary-btn compact" id="purchaseSync" type="button"><i class="bi bi-arrow-repeat"></i> Sync report</button></div>
+          </div>
+          <div class="metric-grid four">
+            <article class="metric-card"><span>Purchase commitment</span><strong id="purchaseCommitment">Rp 42.8B</strong><small class="positive">7.2% below monthly budget</small></article>
+            <article class="metric-card"><span>Open purchase orders</span><strong id="purchaseOpen">186</strong><small>42 due within 7 days</small></article>
+            <article class="metric-card"><span>GR completion</span><strong id="purchaseGr">91.6%</strong><small>By ordered quantity</small></article>
+            <article class="metric-card"><span>Active vendors</span><strong id="purchaseVendors">74</strong><small>Top 10 = 58% of spend</small></article>
+          </div>
+          <div class="dashboard-grid purchase-grid">
+            <article class="panel spend-panel">
+              <div class="panel-head"><div><span>12-MONTH SUMMARY</span><h3>Purchase value trend</h3></div><div class="legend"><span class="actual"></span>PO value <span class="target"></span>Budget</div></div>
+              <div class="spark-area"><svg viewBox="0 0 700 250" role="img" aria-label="Purchase trend"><defs><linearGradient id="purchaseGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6f7bf7" stop-opacity=".42"/><stop offset="1" stop-color="#6f7bf7" stop-opacity="0"/></linearGradient></defs><path class="grid-line" d="M20 50H680M20 100H680M20 150H680M20 200H680"/><path fill="url(#purchaseGrad)" d="M20 182 L80 156 L140 166 L200 118 L260 134 L320 96 L380 112 L440 78 L500 92 L560 64 L620 82 L680 58 L680 220 L20 220Z"/><path class="purchase-line" d="M20 182 L80 156 L140 166 L200 118 L260 134 L320 96 L380 112 L440 78 L500 92 L560 64 L620 82 L680 58"/><path class="budget-line" d="M20 148 L80 148 L140 140 L200 140 L260 132 L320 132 L380 124 L440 124 L500 116 L560 116 L620 108 L680 108"/></svg></div>
+            </article>
+            <article class="panel material-panel">
+              <div class="panel-head"><div><span>MATERIAL TYPE</span><h3>Spend composition</h3></div><button class="icon-action" id="refreshPurchaseChart" type="button"><i class="bi bi-arrow-clockwise"></i></button></div>
+              <div class="composition"><div class="composition-ring"><span><strong>42.8B</strong><small>Total</small></span></div><div class="composition-legend"><div><i style="--dot:#45d6c2"></i><span>Raw materials</span><strong>61%</strong></div><div><i style="--dot:#6f7bf7"></i><span>Supplies</span><strong>23%</strong></div><div><i style="--dot:#33a7ff"></i><span>Packaging</span><strong>16%</strong></div></div></div>
+            </article>
+          </div>
+          <article class="panel data-panel">
+            <div class="panel-head"><div><span>MONITORING PO PURCHASING</span><h3>Open purchase orders</h3></div><div class="table-actions"><input id="purchaseSearch" type="search" placeholder="Search PO, vendor, or material"><button class="secondary-btn compact" id="poSwitch" type="button"><i class="bi bi-arrow-left-right"></i> PO switch list</button></div></div>
+            <div class="table-wrap"><table><thead><tr><th>PO / line</th><th>Vendor</th><th>Material</th><th>PO quantity</th><th>GR quantity</th><th>Remaining</th><th>Delivery</th><th>Aging</th><th>Status</th><th></th></tr></thead><tbody id="purchaseRows">
+              <tr><td><strong>5100038421 / 10</strong><small>12 Jul 2026</small></td><td>PT Demo Polymer Indonesia</td><td>Polypropylene Resin A</td><td>240,000 kg</td><td>216,000 kg</td><td>24,000 kg</td><td>18 Jul 2026</td><td>3 days</td><td><span class="status warning">Partial GR</span></td><td><button class="row-action purchase-action" data-po="5100038421"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr><td><strong>5100038397 / 20</strong><small>11 Jul 2026</small></td><td>PT Sample Packaging</td><td>Paper Core 3 inch</td><td>18,000 pcs</td><td>18,000 pcs</td><td>0 pcs</td><td>15 Jul 2026</td><td>4 days</td><td><span class="status success">Completed</span></td><td><button class="row-action purchase-action" data-po="5100038397"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr><td><strong>5100038362 / 10</strong><small>09 Jul 2026</small></td><td>CV Mockup Engineering</td><td>Bearing 6205-ZZ</td><td>120 pcs</td><td>0 pcs</td><td>120 pcs</td><td>17 Jul 2026</td><td>6 days</td><td><span class="status danger">Overdue</span></td><td><button class="row-action purchase-action" data-po="5100038362"><i class="bi bi-chevron-right"></i></button></td></tr>
+              <tr><td><strong>5100038314 / 30</strong><small>07 Jul 2026</small></td><td>PT Fictional Chemical</td><td>Masterbatch Blue 771</td><td>8,500 kg</td><td>5,000 kg</td><td>3,500 kg</td><td>22 Jul 2026</td><td>8 days</td><td><span class="status warning">Partial GR</span></td><td><button class="row-action purchase-action" data-po="5100038314"><i class="bi bi-chevron-right"></i></button></td></tr>
+            </tbody></table></div>
+          </article>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <dialog class="demo-modal" id="detailModal">
+    <div class="modal-head"><div><span id="modalLabel">DETAIL</span><h2 id="modalTitle">Transaction detail</h2></div><button class="modal-close" type="button" aria-label="Close"><i class="bi bi-x-lg"></i></button></div>
+    <div class="modal-body" id="modalBody"></div>
+  </dialog>
+
+  <script src="assets/demo.js"></script>
+</body>
+</html>
