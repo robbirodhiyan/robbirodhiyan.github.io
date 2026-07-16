@@ -1,71 +1,44 @@
-# Ahmad Robbi — Portfolio Website with Interactive Demos
+# Ahmad Robbi — SEO-Ready Enterprise Portfolio
 
-A modern, responsive, GitHub Pages-ready portfolio for:
+A static GitHub Pages portfolio for Enterprise Application Lead, Technical Lead, SAP Integration, Senior Laravel / Full-Stack Development, IT Business Analysis, and Business Process Analysis opportunities.
 
-- Enterprise Application Lead
-- Technical Lead
-- Senior Full-Stack Developer
-- Business Process / Business Systems Analyst
-- SAP Integration Engineer
+## Included
 
-## What is included
+- Search-engine-friendly homepage metadata and structured data
+- Dedicated HTML case-study pages with unique titles, descriptions, canonical URLs, Open Graph cards, breadcrumbs, and internal links
+- Interactive application demo center
+- `robots.txt`, `sitemap.xml`, `site.webmanifest`, and custom `404.html`
+- Redirect pages for obsolete portfolio URLs
+- Sanitized, fictional demo data with no production connection
 
-- Updated professional portfolio website
-- Dark and light theme
-- Enterprise case studies and measurable impact
-- Five interactive application demos:
-  - Production Reporting & OEE
-  - SAP Data Cloning & Integration
-  - Integrated HRIS
-  - WhatsApp Gateway
-  - Purchase & Finance Reporting
-- Downloadable CV and PDF portfolio
-- SEO metadata, sitemap, robots.txt, and JSON-LD profile schema
-- Responsive desktop, tablet, and mobile layouts
+## Publish
 
-## Demo safety model
-
-The demos are static, sanitized prototypes reconstructed from the supplied repository structures.
-
-- All names, document numbers, phone numbers, employee data, vendors, materials, and financial values are fictional.
-- No SAP, WhatsApp, database, payment gateway, email, or production endpoint is connected.
-- Buttons and workflows simulate application behavior in the browser only.
-- No company source code, credentials, API keys, environment files, or production datasets are included.
-
-## Open the demos
-
-Open:
-
-```text
-demo/index.html
-```
-
-Direct demo links:
-
-```text
-demo/index.html?app=production
-demo/index.html?app=sapclone
-demo/index.html?app=hris
-demo/index.html?app=whatsapp
-demo/index.html?app=purchase
-```
-
-## Deploy to GitHub Pages
-
-1. Back up the current `robbirodhiyan.github.io` repository.
-2. Extract this package.
-3. Copy all files and folders into the repository root.
-4. Commit and push to the branch used by GitHub Pages, commonly `main` or `master`.
-5. Open `https://robbirodhiyan.github.io/` and hard-refresh the browser.
-
-Example commands:
+Copy the package contents into the root of `robbirodhiyan.github.io`, then commit and push:
 
 ```bash
 git add .
-git commit -m "Add interactive enterprise application demos"
+git commit -m "Upgrade portfolio SEO and add case study pages"
 git push origin main
 ```
 
-Use `master` instead of `main` when that is the active branch.
+Use `master` when that is the active GitHub Pages branch.
 
-No build process, PHP runtime, Node.js server, or database is required for these portfolio demos.
+## Google Search Console
+
+After deployment:
+
+1. Add `https://robbirodhiyan.github.io/` as a URL-prefix property.
+2. Use the HTML-tag verification method and paste the verification tag in `index.html` inside `<head>`.
+3. Submit `sitemap.xml`.
+4. Inspect and request indexing for the homepage, `/projects/`, each case study, and `/demo/`.
+
+## Important URLs
+
+- `/` — Portfolio homepage
+- `/projects/` — Case-study index
+- `/projects/sap-production-reporting/`
+- `/projects/sap-data-cloning/`
+- `/projects/integrated-hris/`
+- `/projects/whatsapp-gateway/`
+- `/projects/purchase-finance-reporting/`
+- `/demo/` — Interactive demos

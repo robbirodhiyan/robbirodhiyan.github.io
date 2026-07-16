@@ -410,3 +410,11 @@ html[data-theme="light"] .theme-moon { display: inline; }
   .demo-preview-grid a:first-child { grid-column: auto; min-height: 150px; }
   .demo-preview-grid a { min-height: 140px; }
 }
+
+/* SEO-oriented visible role profile and case-study links */
+.career-search-profile { margin-top:24px; padding:18px 20px; border:1px solid var(--line); border-radius:18px; background:var(--surface); }
+.career-search-profile strong { display:block; color:var(--brand); margin-bottom:5px; }
+.career-search-profile p { margin:0; color:var(--muted); font-size:14px; }
+.case-link-group { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+.case-demo-link.secondary, .project-demo-link.secondary { color:var(--muted); }
+.case-demo-link.secondary:hover, .project-demo-link.secondary:hover { color:var(--brand); }

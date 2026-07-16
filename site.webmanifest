@@ -1,0 +1,21 @@
+{
+  "name": "Ahmad Robbi Enterprise Technology Portfolio",
+  "short_name": "Ahmad Robbi",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07111f",
+  "theme_color": "#07111f",
+  "description": "Enterprise application, SAP integration and business process automation portfolio.",
+  "icons": [
+    {
+      "src": "/assets/img/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
