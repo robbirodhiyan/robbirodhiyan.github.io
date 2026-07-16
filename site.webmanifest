@@ -1,11 +1,12 @@
 {
-  "name": "Ahmad Robbi Enterprise Technology Portfolio",
+  "name": "Ahmad Robbi Technology Services & Portfolio",
   "short_name": "Ahmad Robbi",
+  "description": "Bilingual technology services and portfolio for SAP integration, enterprise systems, web and mobile application development.",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#07111f",
   "theme_color": "#07111f",
-  "description": "Enterprise application, SAP integration and business process automation portfolio.",
   "icons": [
     {
       "src": "/assets/img/favicon.png",
